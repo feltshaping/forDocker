@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Pull Docker Image on macOS
-        run: docker pull your_docker_image:tag
+        run: docker pull mysql
 
       - name: Run Docker Image on macOS
-        run: docker run your_docker_image:tag
+        run: docker run mysql
